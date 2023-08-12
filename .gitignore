@@ -1,1 +1,64 @@
-.Unity
+# ========================================
+# Unity specific ignores
+# ========================================
+
+# Unity generated folders
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+
+# MonoDevelop
+/[Ee]xportedObj/
+/[Pp]ackages/
+/[Pp]rojectSettings/
+/[Ll]ocal[Cc]ache/
+/[Bb]uild[Bb]uilds/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# User-specific files
+/[Uu]ser[Ss]ettings/
+
+# ========================================
+# OS generated files
+# ========================================
+
+# MacOS
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Windows Folder config file
+Desktop.ini
+
+# Windows Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# ========================================
+# Miscellaneous
+# ========================================
+
+# .log files
+*.log
+
+# Unity Package Manager
+/packages/
+
+# Crashes
+*.pidb
+*.crash
