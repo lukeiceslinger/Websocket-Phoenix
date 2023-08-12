@@ -39,3 +39,12 @@ Contributions are welcome! Feel free to open issues and pull requests for any im
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
+## ScreenShots
+
+![LoginScreen](https://github.com/lukeiceslinger/Websocket-Phoenix/blob/main/LoginScreen.png?raw=true)
+
+![LoggedInScreen](https://github.com/lukeiceslinger/Websocket-Phoenix/blob/main/LoggedInScreen.png?raw=true)
+
+
