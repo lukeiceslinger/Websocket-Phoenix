@@ -9,12 +9,12 @@ public class PhoneLogin : MonoBehaviour
     public TMP_InputField phoneNumberInput;
     private WebSocket socket;
     [SerializeField] private Button loginButton;
-    /// </summary>
 
     private void Awake()
     {
         loginButton = GameObject.FindGameObjectWithTag("loginButton").GetComponent<Button>();
     }
+
     private void Start()
     {
         // Access UI elements by finding them in the hierarchy
@@ -42,7 +42,7 @@ public class PhoneLogin : MonoBehaviour
 
     private void InitiateWebSocketConnection(string phoneNumber)
     {
-        // Replace "ws://localhost:3000" with your actual WebSocket server URL
+        // Replace "ws://your-server-url" with your actual WebSocket server URL
         socket = new WebSocket($"ws://localhost:3000");
 
         // Subscribe to WebSocket events
@@ -58,7 +58,8 @@ public class PhoneLogin : MonoBehaviour
         };
         socket.OnClose += (sender, e) =>
         {
-            Debug.Log("WebSocket connection closed");
+            Debug.Log("WebSocket connection closed with code: " + e.Code);
+            Debug.Log("WebSocket close reason: " + e.Reason);
             // Handle the WebSocket connection closure
         };
 
